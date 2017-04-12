@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_make_blue_screen).setOnClickListener(this);
         findViewById(R.id.btn_clear_screen).setOnClickListener(this);
         findViewById(R.id.btn_get_mac_address).setOnClickListener(this);
-        findViewById(R.id.btn_get_ip_cam_image).setOnClickListener(this);
     }
 
     @Override
@@ -103,8 +102,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_get_mac_address:
                 mJniBridge.getMACAddress(mIP);
                 break;
-            case R.id.btn_get_ip_cam_image:
-                mJniBridge.getIpCamImage();
         }
     }
 
@@ -139,7 +136,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             findViewById(R.id.btn_make_blue_screen).setEnabled(aBoolean);
             findViewById(R.id.btn_clear_screen).setEnabled(aBoolean);
             findViewById(R.id.btn_get_mac_address).setEnabled(aBoolean);
-            findViewById(R.id.btn_get_ip_cam_image).setEnabled(aBoolean);
         }
     }
 

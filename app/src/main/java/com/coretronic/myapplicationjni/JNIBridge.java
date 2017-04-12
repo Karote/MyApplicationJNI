@@ -38,10 +38,6 @@ public class JNIBridge {
         getMACAddressOnC(ip);
     }
 
-    public void getIpCamImage(){
-        getIpCamImageOnC();
-    }
-
     public void decodePacket(byte[] packet) {
         decodePacketOnC(packet, packet.length);
     }
@@ -97,8 +93,6 @@ public class JNIBridge {
     private static native void clearScreenColorOnC();
 
     private static native void getMACAddressOnC(String ip);
-
-    private static native void getIpCamImageOnC();
 
     private static native void decodePacketOnC(byte[] packet, int length);
 }

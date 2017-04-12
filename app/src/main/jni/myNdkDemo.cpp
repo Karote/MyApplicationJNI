@@ -144,14 +144,6 @@ void updateJavaInnerClassVariable(JNIEnv *env) {
     env->SetDoubleField(cachedInnerClass, doubleVariableId, doubleVar);
 }
 
-JNIEXPORT void JNICALL
-Java_com_coretronic_myapplicationjni_JNIBridge_getIpCamImageOnC(JNIEnv *env, jclass type) {
-
-    // TODO
-//    cv::VideoCapture vcap;
-//    cv::Mat image;
-}
-
 extern "C" JNIEXPORT void JNICALL
 Java_com_coretronic_myapplicationjni_JNIBridge_makeBlueScreenOnC(JNIEnv *env, jclass type, jstring ip_) {
 
